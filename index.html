@@ -14,18 +14,69 @@
             font-family: sans-serif;
         }
 
+        .nav-container {
+            z-index: 1000;
+        }
+
         .navbar-nav li, 
         .navbar-nav li a,
         .nav-item a {
             color: rgb(3, 3, 83);
         }
+
+        .banner {
+            background-image: url(Images/banner.webp);
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 80px;
+        }
+
+        .banner p {
+            color: white;
+            text-align: center;
+            font-size: 23px;
+        }
+
+        .banner h1 {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 45px;
+            padding-top: 100px !important;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: grey;
+            min-height: 100px;
+        }
+
+        .card {
+            height: 100%; 
+        }
+
+        @media only screen and (max-width: 1000px){
+
+            .banner h1 {
+                font-size: 10px;
+            }
+
+            .banner p {
+                font-size: 30px;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <nav class="nav-container navbar navbar-expand-lg fixed-top shadow-sm">
+    <nav class="nav-container navbar navbar-expand-lg shadow-sm">
 
-        <div class="container-fluid px-4 py-3">
+        <div class="container-fluid px-4 py-3 ">
           <img src="Images/lulu-logo.svg" alt="" height="40px">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -93,6 +144,121 @@
           </div>
         </div>
       </nav>
+
+
+      <div class="banner image-fluid">
+        <h1>Free Self-Publishing Resources</h1>
+        <p>All the information you need to create your book, self-publish like a pro, and market to your audience.</p>
+      </div>
+
+      <div class="container-fluid mt-5 px-5">
+        <div class="row">
+            <div class="col-12 col-lg-4 mb-5">
+                <div class="card shadow">
+                    <img src="Images/free stuf.webp" class="card-img-top" alt="...">
+                    <div class="card-body p-4">
+                      <h5 class="card-title">Guides & Templates</h5>
+                      <p class="card-text">Download free guides for all things self-publishing and a variety of free templates to create a book, journal, planner, and more!</p>
+                      <a style="background-color: rgb(0,0,131); color: white;" href="#" class="btn">Free Stuff</a>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-12 col-lg-4 mb-5">
+                <div class="card shadow">
+                    <img src="Images/author toolkit.webp" class="card-img-top" alt="...">
+                    <div class="card-body p-4">
+                      <h5 class="card-title">Author Toolkit</h5>
+                      <p class="card-text">A collection of the best online tools and software for writing, creating, and selling your book, your way.</p>
+                      <a style="background-color: rgb(0,0,131); color: white;" href="#" class="btn">View The Toolkit</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-5">
+                <div class="card shadow">
+                    <img src="Images/pro.webp" class="card-img-top" alt="...">
+                    <div class="card-body p-4">
+                      <h5 class="card-title">Hire A Pro</h5>
+                      <p class="card-text">Support for your publishing journey with editors, cover designers, and author communities. All vetted by Lulu and ready to help make your publishing team the best it can be.</p>
+                      <a style="background-color: rgb(0,0,131); color: white;" href="#" class="btn">Get Services</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-5">
+                <div class="card shadow">
+                    <img src="Images/grossary.webp" class="card-img-top" alt="...">
+                    <div class="card-body p-4">
+                      <h5 class="card-title">Glossary of Publishing Terms</h5>
+                      <p class="card-text">A comprehensive list of terms related to writing, editing, designing, printing, publishing, selling, and marketing your book.</p>
+                      <a style="background-color: rgb(0,0,131); color: white;" href="#" class="btn">Define It</a>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-12 col-lg-4 mb-5">
+                <div class="card shadow">
+                    <img src="Images/lulu-university-card.webp" class="card-img-top" alt="...">
+                    <div class="card-body p-4">
+                      <h5 class="card-title">Lulu University</h5>
+                      <p class="card-text">Our YouTube series dedicated to all things self-publishing. From formatting your manuscript to building your author brand and everything in-between, Lulu University has you covered with short, informational videos that are updated regularly.</p>
+                      <a style="background-color: rgb(0,0,131); color: white;" href="#" class="btn">Watch & Learn</a>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="col-12 col-lg-4 mb-5">
+                <div class="card shadow">
+                    <img src="Images/book.webp" class="card-img-top" alt="...">
+                    <div class="card-body p-4">
+                      <h5 class="card-title">Book Pricing & Planning</h5>
+                      <p class="card-text">Before you publish, you have to plan. Use our calculator to find print costs for different paper, ink, and binding options. Then get a bulk order estimate with shipping and see how much you can earn with your retail revenue planner.</p>
+                      <a style="background-color: rgb(0,0,131); color: white;" href="#" class="btn">Price Your Book</a>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-12 col-lg-4 mb-5">
+                <div class="card shadow">
+                    <img src="Images/lulu-blog-card.webp"card-img-top" alt="...">
+                    <div class="card-body p-4">
+                      <h5 class="card-title">Lulu Blog</h5>
+                      <p class="card-text">Long-form content from Lulu's team of publishing pros. Features guest authors and insights into the industry, marketing and formatting advice, product reviews, and so much more!</p>
+                      <a style="background-color: rgb(0,0,131); color: white;" href="#" class="btn">Read The Blog</a>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-12 col-lg-4 mb-5">
+                <div class="card shadow">
+                    <img src="Images/lulu-knowledge-base-card.webp" class="card-img-top" alt="...">
+                    <div class="card-body p-4">
+                      <h5 class="card-title">Knowledge Base</h5>
+                      <p class="card-text">Details about Lulu's fulfillment and shipping, along with guidance to help you make your project perfect. All from our dedicated support staff.</p>
+                      <a style="background-color: rgb(0,0,131); color: white;" href="#" class="btn">Get Answers</a>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-12 col-lg-4 mb-5">
+                <div class="card shadow">
+                    <img src="Images/lulu-contact-support-card.webp" class="card-img-top" alt="...">
+                    <div class="card-body p-4">
+                      <h5 class="card-title">Contact Support</h5>
+                      <p class="card-text">Can't find the answers you need on our Blog, Knowledge Base, or Lulu University? Reach out to our dedicated support team for one-on-one assistance!</p>
+                      <a style="background-color: rgb(0,0,131); color: white;" href="#" class="btn">Contact Us</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+
 
       
     
